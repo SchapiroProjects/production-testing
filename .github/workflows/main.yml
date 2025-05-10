@@ -29,3 +29,6 @@ jobs:
             .output/**
             .github/**
             .vscode/**
+            **/node_modules/**
+            **/.git*
+            **/.git*/**
