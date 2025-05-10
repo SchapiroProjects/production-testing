@@ -1,9 +1,0 @@
-7.5.2025
-now ftp server is running
-
-# Online hosting and access to FTP server
-Url: testingenvir.vps.webdock.cloud
-
-todos next time:
-- make a git repo for testing with ftp server
-- add linting, unit testing and forbidding to push to main branch (auto rollout into production)

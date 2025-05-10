@@ -5,4 +5,7 @@ export default defineConfig({
   tsr: {
     appDirectory: 'src',
   },
+  server: {
+    preset: 'bun',
+  },
 })
