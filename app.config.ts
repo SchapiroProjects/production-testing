@@ -9,4 +9,15 @@ export default defineConfig({
     preset: 'bun',
     baseURL: '/production',
   },
+  routers: {
+    client: {
+      base: '/production',
+    },
+    server: {
+      base: '/production',
+    },
+    public: {
+      base: '/production',
+    },
+  },
 })
