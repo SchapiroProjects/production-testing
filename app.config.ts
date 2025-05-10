@@ -9,7 +9,7 @@ export default defineConfig({
     preset: 'bun',
   },
   routers: {
-    server: {
+    client: {
       base: '/production',
     },
   },
