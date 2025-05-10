@@ -7,8 +7,14 @@ jobs:
     name: Deploy to FTP server
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
+      - name: Checkout code - taking code from GitHub
         uses: actions/checkout@v4
+      - name: Setup Bun
+        uses: oven-sh/setup-bun@v2
+      - name: Install Bun dependencies
+        run: bun install
+      - name: Build
+        run: bun run build
       - name: FTP Deploy
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
@@ -18,3 +24,4 @@ jobs:
           server-dir: ./www/production/
           security: strict
           port: ${{ secrets.FTP_PORT }}
+          local-dir: ./.output/
