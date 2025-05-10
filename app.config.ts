@@ -7,11 +7,5 @@ export default defineConfig({
   },
   server: {
     preset: 'bun',
-    baseURL: '/production',
-  },
-  routers: {
-    public: {
-      base: '/production',
-    },
   },
 })
