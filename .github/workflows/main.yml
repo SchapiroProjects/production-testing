@@ -24,8 +24,8 @@ jobs:
           server-dir: ./www/production/
           security: strict
           port: ${{ secrets.FTP_PORT }}
-          exclude: 
-            - src/
-            - .output/
-            - .github/
-            - .vscode/
+          exclude: |
+            src/**
+            .output/**
+            .github/**
+            .vscode/**
