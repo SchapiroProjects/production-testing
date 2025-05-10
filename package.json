@@ -5,8 +5,8 @@
   "type": "module",
   "scripts": {
     "dev": "vinxi dev",
-    "build": "vinxi build",
-    "start": "vinxi start"
+    "build": "export NITRO_APP_BASE_URL=/production && vinxi build",
+    "start": "export NITRO_APP_BASE_URL=/production && vinxi start"
   },
   "dependencies": {
     "@tanstack/react-router": "^1.120.3",
