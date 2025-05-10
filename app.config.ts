@@ -12,11 +12,5 @@ export default defineConfig({
     server: {
       base: '/production',
     },
-    client: {
-      base: '/production',
-    },
-    public: {
-      base: '/production',
-    },
   },
 })
