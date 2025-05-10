@@ -26,7 +26,7 @@ jobs:
           port: ${{ secrets.FTP_PORT }}
           exclude: |
             src/**
-            .output/**
+            .vinxi/**
             .github/**
             .vscode/**
             **/node_modules/**
